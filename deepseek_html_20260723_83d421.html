@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ============================================= -->
+  <!-- GOOGLE SEARCH CONSOLE VERIFICATION            -->
+  <!-- Replace "YOUR_VERIFICATION_CODE" with the    -->
+  <!-- code Google gives you in Search Console      -->
+  <!-- ============================================= -->
+  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+  
+  <!-- ============================================= -->
+  <!-- SEO META TAGS - IMPORTANT FOR GOOGLE         -->
+  <!-- ============================================= -->
+  <title>InkWell · Premium Content Writing Services</title>
+  <meta name="description" content="Professional content writing services: blog articles, website copy, SEO content, business & marketing, tech writing, and more. 200+ articles written." />
+  <meta name="keywords" content="content writing, SEO content, blog writing, website copy, marketing content, tech writing, freelance writer" />
+  <link rel="canonical" href="https://yourusername.github.io/" />
+  
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="InkWell · Premium Content Writing Services" />
+  <meta property="og:description" content="Professional content writing services: blog articles, website copy, SEO content, business & marketing, tech writing, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourusername.github.io/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=630&fit=crop&auto=format" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="InkWell · Premium Content Writing Services" />
+  <meta name="twitter:description" content="Professional content writing services: blog articles, website copy, SEO content, business & marketing, tech writing, and more." />
+  
+  <!-- Robots (tell Google to index and follow links) -->
+  <meta name="robots" content="index, follow" />
+  
+  <!-- ============================================= -->
+  <!-- SITEMAP (automatically generated)             -->
+  <!-- This section creates a sitemap that Google    -->
+  <!-- can discover. You can also submit sitemap.xml -->
+  <!-- ============================================= -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+
+  <!-- Google Font & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- AOS (Animate On Scroll) library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <style>
+    /* ============================================= */
+    /* ALL YOUR STYLES (same as before)              */
+    /* ============================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: #faf9fc;
+      color: #1e1a2b;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ----- BUTTONS ----- */
+    .btn-primary {
+      display: inline-block;
+      background: #6c3bf1;
+      color: white;
+      font-weight: 600;
+      padding: 0.9rem 2.5rem;
+      border-radius: 60px;
+      border: none;
+      font-size: 1rem;
+      transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: default;
+      box-shadow: 0 8px 24px -6px rgba(108, 59, 241, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 16px 36px -8px #6c3bf1;
+    }
+
+    .btn-primary:hover::after {
+      opacity: 1;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: #6c3bf1;
+      font-weight: 600;
+      padding: 0.9rem 2.5rem;
+      border-radius: 60px;
+      border: 2px solid #d9c9ff;
+      transition: 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: default;
+    }
+
+    .btn-outline:hover {
+      background: #f3eeff;
+      border-color: #6c3bf1;
+      transform: translateY(-2px);
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #ede7fe;
+      color: #6c3bf1;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.25rem 1.4rem;
+      border-radius: 40px;
+      letter-spacing: 0.3px;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 1.2rem;
+      color: #4a455e;
+      max-width: 650px;
+    }
+
+    /* ----- NAVIGATION ----- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      background: linear-gradient(145deg, #6c3bf1, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .logo i {
+      -webkit-text-fill-color: #6c3bf1;
+      margin-right: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2d2a3e;
+      font-weight: 500;
+      transition: 0.2s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #6c3bf1;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #6c3bf1;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* ----- HERO with VIDEO BACKGROUND ----- */
+    .hero-wrapper {
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+      margin: 0.5rem 0 2rem;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.15;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(250, 249, 252, 0.92) 0%, rgba(243, 238, 255, 0.88) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 4rem 3rem;
+      flex: 1 1 55%;
+    }
+
+    .hero-content .badge {
+      background: rgba(108, 59, 241, 0.12);
+      backdrop-filter: blur(8px);
+      padding: 0.3rem 1.4rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #6c3bf1;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(108, 59, 241, 0.15);
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(145deg, #6c3bf1, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      color: #4a455e;
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .hero-stats div {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+
+    .hero-stats span {
+      display: block;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #4f4a66;
+    }
+
+    .hero-image-side {
+      position: relative;
+      z-index: 2;
+      flex: 1 1 35%;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image-side img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 32px;
+      box-shadow: 0 30px 60px -20px rgba(108, 59, 241, 0.3);
+      border: 3px solid rgba(255,255,255,0.6);
+      backdrop-filter: blur(4px);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-16px); }
+    }
+
+    /* ----- SERVICES (with icons & hover) ----- */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0 4rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2.2rem 1.8rem;
+      border-radius: 32px;
+      border: 1px solid #f1edf9;
+      transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      box-shadow: 0 6px 18px -8px rgba(0,0,0,0.04);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, #6c3bf1, #a855f7);
+      opacity: 0;
+      transition: 0.4s;
+      border-radius: 32px;
+      z-index: 0;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px) scale(1.01);
+      border-color: #6c3bf1;
+      box-shadow: 0 24px 48px -16px rgba(108, 59, 241, 0.2);
+    }
+
+    .service-card:hover::before {
+      opacity: 0.04;
+    }
+
+    .service-card .icon {
+      background: #f3eeff;
+      width: 60px;
+      height: 60px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #6c3bf1;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+      transition: 0.3s;
+    }
+
+    .service-card:hover .icon {
+      background: #6c3bf1;
+      color: white;
+      transform: rotate(-6deg) scale(1.05);
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .service-card p {
+      color: #4f4a66;
+      font-size: 0.95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ----- ABOUT with image ----- */
+    .about-section {
+      background: #f8f5ff;
+      border-radius: 48px;
+      padding: 3.5rem 3rem;
+      margin: 3rem 0 4rem;
+      border: 2px solid #ffffff;
+      box-shadow: 0 10px 30px -12px rgba(108, 59, 241, 0.08);
+    }
+
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 2 1 300px;
+    }
+
+    .about-text h2 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-text p {
+      color: #3b3357;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .about-stats div {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+
+    .about-stats span {
+      display: block;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #4f4a66;
+    }
+
+    .about-image {
+      flex: 1 1 250px;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px -12px rgba(108, 59, 241, 0.15);
+      border: 3px solid white;
+      transition: 0.4s;
+    }
+
+    .about-image:hover {
+      transform: scale(1.02);
+      box-shadow: 0 30px 60px -16px rgba(108, 59, 241, 0.25);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ----- TEAMS (with hover animation) ----- */
+    .teams-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.8rem;
+      margin: 2.5rem 0 3.5rem;
+    }
+
+    .team-card {
+      background: white;
+      padding: 2rem 1.5rem;
+      border-radius: 28px;
+      border: 1px solid #f1edf9;
+      transition: 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      text-align: center;
+      position: relative;
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      border-color: #6c3bf1;
+      box-shadow: 0 16px 32px -12px rgba(108, 59, 241, 0.15);
+    }
+
+    .team-card i {
+      font-size: 2.4rem;
+      color: #6c3bf1;
+      margin-bottom: 0.8rem;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .team-card:hover i {
+      transform: scale(1.15) rotate(-4deg);
+    }
+
+    .team-card h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+
+    .team-card p {
+      color: #4f4a66;
+      font-size: 0.9rem;
+    }
+
+    /* ----- TESTIMONIALS ----- */
+    .testimonials {
+      background: linear-gradient(145deg, #f8f5ff, #f3eeff);
+      border-radius: 48px;
+      padding: 3.5rem 2.5rem;
+      margin: 3rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials::before {
+      content: '\201C';
+      position: absolute;
+      right: 3rem;
+      top: -1rem;
+      font-size: 12rem;
+      color: rgba(108, 59, 241, 0.06);
+      font-family: Georgia, serif;
+    }
+
+    .testimonials h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-item {
+      background: white;
+      padding: 2rem;
+      border-radius: 28px;
+      border: 1px solid #e4def5;
+      transition: 0.3s;
+    }
+
+    .testimonial-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px -12px rgba(108, 59, 241, 0.12);
+    }
+
+    .testimonial-item i {
+      color: #6c3bf1;
+      font-size: 1.4rem;
+      opacity: 0.6;
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonial-item blockquote {
+      font-weight: 500;
+      color: #1e1a2b;
+      margin-bottom: 0.8rem;
+    }
+
+    .testimonial-item cite {
+      font-style: normal;
+      font-weight: 600;
+      color: #6c3bf1;
+      display: block;
+    }
+
+    .testimonial-item .role {
+      font-size: 0.85rem;
+      color: #4f4a66;
+    }
+
+    /* ----- FAQ ----- */
+    .faq-section {
+      padding: 2rem 0 3rem;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 2rem;
+      border-radius: 28px;
+      border: 1px solid #f1edf9;
+      transition: 0.3s;
+    }
+
+    .faq-item:hover {
+      border-color: #d9c9ff;
+      box-shadow: 0 8px 20px -10px rgba(108, 59, 241, 0.06);
+    }
+
+    .faq-item h4 {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .faq-item p {
+      color: #4f4a66;
+      font-size: 0.95rem;
+    }
+
+    /* ----- CONTACT BANNER (animated) ----- */
+    .contact-banner {
+      background: linear-gradient(135deg, #1e1a2b, #2d2642);
+      border-radius: 48px;
+      padding: 3.5rem 3rem;
+      margin: 3rem 0 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 60%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(108, 59, 241, 0.15) 0%, transparent 70%);
+      animation: pulseGlow 8s ease-in-out infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+
+    .contact-banner h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-banner p {
+      opacity: 0.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-banner .phone {
+      font-size: 1.6rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.06);
+      padding: 0.5rem 2rem;
+      border-radius: 60px;
+      border: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+      z-index: 1;
+      transition: 0.3s;
+    }
+
+    .contact-banner .phone:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .contact-banner .btn-primary {
+      background: white;
+      color: #1e1a2b;
+      box-shadow: none;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-banner .btn-primary:hover {
+      background: #f3eeff;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      border-top: 1px solid #e4def5;
+      padding: 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #4f4a66;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #6c3bf1;
+    }
+
+    .social i {
+      font-size: 1.4rem;
+      margin-left: 1rem;
+      color: #4f4a66;
+      transition: 0.3s;
+    }
+
+    .social i:hover {
+      color: #6c3bf1;
+      transform: translateY(-3px);
+    }
+
+    /* ----- SITEMAP SECTION (for Google) ----- */
+    .sitemap-section {
+      background: #f8f5ff;
+      border-radius: 32px;
+      padding: 2rem 2.5rem;
+      margin: 2rem 0;
+      border: 1px solid #e4def5;
+    }
+
+    .sitemap-section h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .sitemap-section code {
+      background: #ede7fe;
+      padding: 0.2rem 0.8rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #6c3bf1;
+      display: inline-block;
+      word-break: break-all;
+    }
+
+    .sitemap-section .btn-copy {
+      background: #ede7fe;
+      border: none;
+      padding: 0.3rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      color: #6c3bf1;
+      cursor: pointer;
+      transition: 0.2s;
+      font-size: 0.85rem;
+    }
+
+    .sitemap-section .btn-copy:hover {
+      background: #6c3bf1;
+      color: white;
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (max-width: 1024px) {
+      .hero-content h1 {
+        font-size: 3.2rem;
+      }
+      .hero-wrapper {
+        min-height: auto;
+        padding: 2rem 0;
+      }
+      .hero-image-side {
+        flex: 1 1 100%;
+        padding: 1rem 2rem 2rem;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .hero-content {
+        padding: 3rem 1.5rem;
+      }
+      .hero-content h1 {
+        font-size: 2.6rem;
+      }
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+      }
+      .contact-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-grid {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-stats {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      .section-title {
+        font-size: 2rem;
+      }
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .testimonials {
+        padding: 2rem 1.5rem;
+      }
+      .sitemap-section {
+        padding: 1.5rem;
+      }
+    }
+
+    /* ----- AOS overrides (smooth) ----- */
+    [data-aos] {
+      pointer-events: none;
+    }
+    [data-aos].aos-animate {
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- NAV -->
+    <header class="navbar">
+      <div class="logo"><i class="fas fa-feather-alt"></i> InkWell</div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#teams">Expertise</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" class="btn-outline" style="padding: 0.5rem 1.8rem;">Contact</a>
+      </div>
+    </header>
+
+    <!-- HERO with video background & image -->
+    <div class="hero-wrapper">
+      <video class="hero-video-bg" autoplay muted loop playsinline>
+        <source src="https://cdn.pixabay.com/video/2022/02/28/108139-683089071_large.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+        <div class="badge"><i class="fas fa-pen-fancy"></i> Content that converts</div>
+        <h1>Words that <span>connect</span>,<br /> stories that <span>sell</span>.</h1>
+        <p>I craft clear, engaging, and SEO-optimized content for blogs, websites, business, tech, and social media. One voice. One strategy. Infinite impact.</p>
+        <div class="hero-actions">
+          <span class="btn-primary"><i class="fas fa-paper-plane"></i> Start a project</span>
+          <span class="btn-outline">See my work</span>
+        </div>
+        <div class="hero-stats">
+          <div>200+ <span>Articles written</span></div>
+          <div>4.9 <span>Client rating</span></div>
+          <div>30+ <span>Industries served</span></div>
+        </div>
+      </div>
+
+      <div class="hero-image-side" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&h=600&fit=crop&crop=center&auto=format" alt="Writing desk with notebook" />
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <span class="section-tag" data-aos="fade-up"><i class="fas fa-cubes"></i> What I write</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Content services that <br />build, engage, and grow.</h2>
+      <p class="section-sub" data-aos="fade-up" data-aos-delay="150">From blog posts to product descriptions — every piece is crafted with precision, purpose, and your audience in mind.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-aos="zoom-in" data-aos-duration="600">
+        <div class="icon"><i class="fas fa-newspaper"></i></div>
+        <h3>Blog & Articles</h3>
+        <p>Thought-leading posts, listicles, and deep-dives that rank and resonate.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+        <div class="icon"><i class="fas fa-globe"></i></div>
+        <h3>Website Content</h3>
+        <p>Landing pages, about us, service descriptions — clear, persuasive, and on-brand.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Business & Marketing</h3>
+        <p>Case studies, white papers, email campaigns, and sales enablement content.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+        <div class="icon"><i class="fas fa-microchip"></i></div>
+        <h3>Tech & Research</h3>
+        <p>Deep technical articles, explainers, and data-driven reports that inform.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+        <div class="icon"><i class="fas fa-hashtag"></i></div>
+        <h3>Social Media</h3>
+        <p>Captions, threads, and scroll-stopping content that sparks conversation.</p>
+      </div>
+      <div class="service-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
+        <div class="icon"><i class="fas fa-box-open"></i></div>
+        <h3>Product Descriptions</h3>
+        <p>Compelling, benefit-driven copy that turns browsers into buyers.</p>
+      </div>
+    </div>
+
+    <!-- ABOUT with image -->
+    <div class="about-section" id="about">
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+          <span class="section-tag"><i class="fas fa-user-astronaut"></i> About me</span>
+          <h2>Writing that works — for any industry.</h2>
+          <p>I'm a versatile writer with a passion for clarity and impact. Over the years, I've crafted blog articles, website copy, SEO content, business & marketing pieces, educational material, tech explainers, product descriptions, and social media content.</p>
+          <p>My style blends reader engagement with search engine optimisation, always keeping accuracy and professionalism at the core. I easily adapt tone and structure to fit any industry — from startups to established brands.</p>
+          <div class="about-stats">
+            <div>200+ <span>Articles written</span></div>
+            <div>4.9 <span>Client rating</span></div>
+            <div>30+ <span>Industries served</span></div>
+          </div>
+        </div>
+        <div class="about-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+          <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop&crop=center&auto=format" alt="Person working on laptop" />
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAMS / EXPERTISE -->
+    <div id="teams">
+      <span class="section-tag" data-aos="fade-up"><i class="fas fa-users"></i> My expertise</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Writing across every channel.</h2>
+    </div>
+    <div class="teams-grid">
+      <div class="team-card" data-aos="flip-up" data-aos-duration="600">
+        <i class="fas fa-pen-fancy"></i>
+        <h4>Blog & Editorial</h4>
+        <p>Engaging, well-researched articles that inform and inspire.</p>
+      </div>
+      <div class="team-card" data-aos="flip-up" data-aos-duration="600" data-aos-delay="100">
+        <i class="fas fa-search"></i>
+        <h4>SEO Content</h4>
+        <p>Strategically optimized content that ranks and attracts traffic.</p>
+      </div>
+      <div class="team-card" data-aos="flip-up" data-aos-duration="600" data-aos-delay="200">
+        <i class="fas fa-bullhorn"></i>
+        <h4>Marketing Copy</h4>
+        <p>Persuasive copy for campaigns, emails, and sales pages.</p>
+      </div>
+      <div class="team-card" data-aos="flip-up" data-aos-duration="600" data-aos-delay="300">
+        <i class="fas fa-laptop-code"></i>
+        <h4>Tech Writing</h4>
+        <p>Clear explanations of complex technical concepts.</p>
+      </div>
+      <div class="team-card" data-aos="flip-up" data-aos-duration="600" data-aos-delay="400">
+        <i class="fas fa-graduation-cap"></i>
+        <h4>Educational Content</h4>
+        <p>Training materials, guides, and instructional content.</p>
+      </div>
+      <div class="team-card" data-aos="flip-up" data-aos-duration="600" data-aos-delay="500">
+        <i class="fas fa-hashtag"></i>
+        <h4>Social Media</h4>
+        <p>Scroll-stopping captions and threads that build community.</p>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials" id="testimonials">
+      <h2 data-aos="fade-up"><i class="fas fa-quote-left" style="color: #6c3bf1; margin-right: 0.5rem;"></i> Hear from my clients</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-quote-right"></i>
+          <blockquote>"InkWell transformed our blog. Traffic doubled in 3 months, and the engagement is through the roof."</blockquote>
+          <cite>Priya Sharma</cite>
+          <span class="role">Marketing Director, TechStart</span>
+        </div>
+        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-quote-right"></i>
+          <blockquote>"The product descriptions they wrote increased our conversion rate by 20%. Absolutely recommend."</blockquote>
+          <cite>Rahul Mehta</cite>
+          <span class="role">Founder, EcoGoods</span>
+        </div>
+        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-quote-right"></i>
+          <blockquote>"Professional, adaptable, and always on deadline. A pleasure to work with."</blockquote>
+          <cite>Ananya Reddy</cite>
+          <span class="role">Content Lead, FinWise</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq-section" id="faq">
+      <span class="section-tag" data-aos="fade-up"><i class="fas fa-question-circle"></i> Got questions?</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Frequently asked questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item" data-aos="zoom-in" data-aos-duration="500">
+          <h4>What types of content do you write?</h4>
+          <p>Blog articles, website copy, SEO content, business & marketing pieces, educational material, tech articles, product descriptions, and social media content.</p>
+        </div>
+        <div class="faq-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100">
+          <h4>Do you optimize content for SEO?</h4>
+          <p>Absolutely. Every piece is crafted with SEO best practices in mind — from keyword research to on-page optimization.</p>
+        </div>
+        <div class="faq-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200">
+          <h4>Can you adapt to different industries?</h4>
+          <p>Yes. I've written for tech, finance, health, education, e-commerce, and more. I adapt tone and style to fit your brand and audience.</p>
+        </div>
+        <div class="faq-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+          <h4>What's your process?</h4>
+          <p>Brief → research → draft → revise → deliver. I work closely with you to ensure the final piece exceeds expectations.</p>
+        </div>
+        <div class="faq-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
+          <h4>How much do you charge?</h4>
+          <p>Rates depend on project scope and complexity. I offer competitive pricing for high-quality, professional content.</p>
+        </div>
+        <div class="faq-item" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+          <h4>How can I get started?</h4>
+          <p>Reach out via the contact button or call me directly. Let's discuss your project and how I can help you achieve your goals.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- SITEMAP SECTION - HELPS GOOGLE FIND YOUR PAGES -->
+    <!-- ============================================= -->
+    <div class="sitemap-section" data-aos="fade-up">
+      <h3><i class="fas fa-sitemap" style="color: #6c3bf1;"></i> Sitemap for Google</h3>
+      <p style="color: #4f4a66; margin-bottom: 0.8rem;">Copy this XML sitemap and save it as <code>sitemap.xml</code> in your website's root folder. Then submit it in Google Search Console.</p>
+      <div style="background: #ede7fe; padding: 1rem; border-radius: 16px; overflow-x: auto; margin-bottom: 1rem;">
+        <code style="font-size: 0.8rem; white-space: pre-wrap; word-break: break-all;">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://yourusername.github.io/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-07-23&lt;/lastmod&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://yourusername.github.io/#services&lt;/loc&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://yourusername.github.io/#about&lt;/loc&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://yourusername.github.io/#blog&lt;/loc&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;0.9&lt;/priority&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;
+        </code>
+      </div>
+      <button class="btn-copy" onclick="copySitemap()"><i class="fas fa-copy"></i> Copy sitemap.xml</button>
+      <p style="margin-top: 0.8rem; font-size: 0.9rem; color: #4f4a66;">
+        <i class="fas fa-info-circle" style="color: #6c3bf1;"></i> 
+        After uploading <code>sitemap.xml</code> to your GitHub Pages repository, submit it in 
+        <a href="https://search.google.com/search-console" target="_blank" style="color: #6c3bf1; text-decoration: underline;">Google Search Console</a> 
+        under "Sitemaps".
+      </p>
+    </div>
+
+    <!-- CONTACT BANNER -->
+    <div class="contact-banner" data-aos="fade-up" data-aos-duration="800">
+      <div>
+        <h3><i class="fas fa-feather-alt" style="margin-right: 0.5rem;"></i> Let's create something great</h3>
+        <p>Have a project in mind? Let's talk.</p>
+      </div>
+      <div>
+        <span class="phone"><i class="fas fa-phone" style="margin-right: 0.5rem;"></i> 7667390694</span>
+      </div>
+      <div>
+        <span class="btn-primary"><i class="fas fa-envelope"></i> Hire me</span>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="copy">
+        <i class="fas fa-feather-alt" style="color: #6c3bf1; margin-right: 6px;"></i> InkWell · 2026
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#teams">Expertise</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="social">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- AOS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 60,
+      duration: 800,
+      easing: 'ease-out-cubic'
+    });
+
+    // Copy sitemap to clipboard
+    function copySitemap() {
+      const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourusername.github.io/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yourusername.github.io/#services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourusername.github.io/#about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yourusername.github.io/#blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>`;
+
+      navigator.clipboard.writeText(sitemap).then(() => {
+        const btn = document.querySelector('.btn-copy');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+        }, 3000);
+      }).catch(() => {
+        alert('Please copy the sitemap manually from the code block above.');
+      });
+    }
+  </script>
+
+</body>
+</html>
